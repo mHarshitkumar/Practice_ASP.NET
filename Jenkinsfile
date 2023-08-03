@@ -18,12 +18,4 @@ pipeline {
             }
         }
     }
-	
-	post
-	{
-		always
-		{
-			emailext body: 'Summary', subject: 'Pipeline status', to: 'harshit.kumar@gingerwebs.co.in'
-		}
-	}
 }
